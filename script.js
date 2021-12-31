@@ -46,6 +46,7 @@ sosmed.forEach(el => {
 });
 
 
+// function taken from johsteven.github.io/penghitung-wr
 function rumus(tMatch, tWr, wrReq) {
     let tWin = tMatch * (tWr / 100);
     let tLose = tMatch - tWin;
