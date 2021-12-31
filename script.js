@@ -55,18 +55,3 @@ function rumus(tMatch, tWr, wrReq) {
     let final = seratusPersen - tMatch;
     return Math.round(final);
 }
-
-function rumusLose(tMatch, tWr, wrReq) {
-    let persen = tWr - wrReq;
-    let final = tMatch * (persen / 100);
-    return Math.round(final);
-}
-
-function minLose(tMatch, tWr) {
-    return Math.ceil(tMatch * tWr / 100)
-}
-
-function loseStreak(tMatch, tWr, lsReq) {
-    const win = Math.floor(tMatch * (tWr / 100) - lsReq) / tMatch * 100;
-    return win.toFixed(1);
-}
